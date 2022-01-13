@@ -6,10 +6,10 @@ name = "pypi"
 [packages]
 django = "*"
 psycopg2-binary = "*"
-djangorestframework = "*"
 django-imagekit = "*"
 pillow = "*"
 django-extensions = "*"
+djangorestframework = "*"
 
 [dev-packages]
 
