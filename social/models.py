@@ -5,7 +5,7 @@ from imagekit.models import ProcessedImageField
 from imagekit.processors import ResizeToFit
 
 
-# Create your models here.
+
 class Base(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     class Meta:
@@ -22,13 +22,13 @@ class Photo(Base):
     photo = ProcessedImageField(upload_to="photos", format="JPEG", options={"quality": 80}, processors=[ResizeToFit(width=1000, height=1000)])
 
     def __str__(self):
-        return self.name
+        return self.description
 
 class Comment(models.Model):
-    username = models.CharField(max_length=100)
-    comment =  models.TextField(max_length=1000)
-    photo = models.ForeignKey(Photo,on_delete=models.CASCADE, related_name='comments')
-    user = models.ForeignKey(User,on_delete=models.CASCADE, related_name='comments')
+    username = models.CharField(max_length=100),
+    comment =  models.TextField(max_length=1000),
+    photo = models.ForeignKey(Photo,on_delete=models.CASCADE, related_name='comment'),
+    user = models.ForeignKey(User,on_delete=models.CASCADE, related_name='comment'),
 
     def __str__(self):
-        return self.user
+        return self.username
