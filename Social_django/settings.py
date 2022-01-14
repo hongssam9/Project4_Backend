@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = 'social.User'
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,8 +41,10 @@ INSTALLED_APPS = [
     'django_extensions',
     'imagekit',
     'rest_framework',
+    'accounts',
 
 ]
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 REST_FRAMEWORK = {
        'DEFAULT_PERMISSION_CLASSES': [

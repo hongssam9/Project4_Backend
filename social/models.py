@@ -1,34 +1,25 @@
+from datetime import date
 from django.db import models
-import uuid
-from django.contrib.auth.models import AbstractUser
 from imagekit.models import ProcessedImageField
 from imagekit.processors import ResizeToFit
 
 
 
-class Base(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    class Meta:
-        """Metadata."""
-        abstract= True
-
-class User(Base, AbstractUser):
-        """Custom User model"""
-
-
-class Photo(Base):
-    user = models.ForeignKey( User, verbose_name="Created By", on_delete=models.CASCADE, related_name='photos')
-    description = models.TextField()
+class Photo(models.Model):
+    # user = models.ForeignKey( User, verbose_name="Created By", on_delete=models.CASCADE, related_name='photos')
+    description = models.CharField(max_length=1000)
     photo = ProcessedImageField(upload_to="photos", format="JPEG", options={"quality": 80}, processors=[ResizeToFit(width=1000, height=1000)])
+    date_created = models.DateTimeField(auto_now_add=True)
+    date_updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.description
+        return self.date_created
 
 class Comment(models.Model):
-    username = models.CharField(max_length=100),
-    comment =  models.TextField(max_length=1000),
-    photo = models.ForeignKey(Photo,on_delete=models.CASCADE, related_name='comment'),
-    user = models.ForeignKey(User,on_delete=models.CASCADE, related_name='comment'),
+    text = models.CharField(max_length=1000)
+    photo = models.ForeignKey(Photo,on_delete=models.CASCADE, related_name='comments')
+    # user = models.ForeignKey(User,on_delete=models.CASCADE, related_name='comments_user')
+    
 
-    def __str__(self):
-        return self.username
+    # def __str__(self):
+    #     return self.comment
