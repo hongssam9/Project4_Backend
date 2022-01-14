@@ -1,7 +1,8 @@
 from pyexpat import model
+from sqlite3 import Date
 from rest_framework import serializers
 from django.db.models import fields
-from .models import Comment, Photo, Base
+from .models import Comment, Photo
 
 class PhotoSerializer(serializers.HyperlinkedModelSerializer):
     comments = serializers.HyperlinkedRelatedField(
@@ -13,11 +14,14 @@ class PhotoSerializer(serializers.HyperlinkedModelSerializer):
         model = Photo
         fields = (
             'id',
-            'comment'
+            'comments',
             'description',
             'photo',
-            'user',
+            'date_created',
+            "date_updated",
+            # 'user',
         )
+
 
 class CommentSerializer(serializers.HyperlinkedModelSerializer):
     photo = serializers.HyperlinkedRelatedField(
@@ -29,8 +33,8 @@ class CommentSerializer(serializers.HyperlinkedModelSerializer):
         model = Comment
         fields = (
             'id',
-            'username',
-            'comment',
+            'text',
             'photo',
-            'user',
+            
+            # 'user',
         )
