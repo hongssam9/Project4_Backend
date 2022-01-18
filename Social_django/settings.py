@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'accounts',
     'social_django',
     'corsheaders',
-    'core',
+    
 ]
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
