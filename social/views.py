@@ -4,6 +4,7 @@ from django.http import JsonResponse
 from django.db.models.query import QuerySet
 from .serializers import PhotoSerializer, CommentSerializer
 from rest_framework import generics
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
@@ -11,6 +12,7 @@ class PhotoList(generics.ListCreateAPIView):
     queryset = Photo.objects.all()
     serializer_class = PhotoSerializer
 
+@login_required
 class PhotoDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Photo.objects.all()
     serializer_class = PhotoSerializer
