@@ -10,6 +10,7 @@ django-imagekit = "*"
 pillow = "*"
 django-extensions = "*"
 djangorestframework = "*"
+social-auth-app-django = "*"
 
 [dev-packages]
 

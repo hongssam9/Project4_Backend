@@ -22,5 +22,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('social.urls')),
-    path('api-auth', include('rest_framework.urls', namespace='rest_framework'))
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
+    path('oauth/', include('social_django.urls', namespace='social')),
+    
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
