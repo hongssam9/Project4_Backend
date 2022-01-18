@@ -11,6 +11,9 @@ pillow = "*"
 django-extensions = "*"
 djangorestframework = "*"
 social-auth-app-django = "*"
+whitenoise = "*"
+dj-database-url = "*"
+gunicorn = "*"
 
 [dev-packages]
 
