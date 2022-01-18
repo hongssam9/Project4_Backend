@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'accounts',
     'social_django',
     'corsheaders',
-    
+
 ]
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
@@ -96,9 +96,7 @@ WSGI_APPLICATION = 'Social_django.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'default': dj_database_url.config(conn_max_age=600) 
-    }
+  'default': dj_database_url.config(conn_max_age=600)
 }
 
 
