@@ -16,7 +16,7 @@ class Photo(models.Model):
     date_updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.date_created
+        return str(self.date_created)
 
 class Comment(models.Model):
     text = models.CharField(max_length=1000)
@@ -24,5 +24,5 @@ class Comment(models.Model):
     # user = models.ForeignKey(User,on_delete=models.CASCADE, related_name='comments_user')
     
 
-    # def __str__(self):
-    #     return self.comment
+    def __str__(self):
+        return str(self.comment)
