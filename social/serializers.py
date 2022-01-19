@@ -10,6 +10,10 @@ class PhotoSerializer(serializers.HyperlinkedModelSerializer):
        many=True,
        read_only=True,
     )
+    # likes = serializers.ModelSerializer(
+    #     many=True,
+    #     read_only=True,
+    # )
     class Meta:
         model = Photo
         fields = (
@@ -17,6 +21,7 @@ class PhotoSerializer(serializers.HyperlinkedModelSerializer):
             'comments',
             'description',
             'photo',
+            # 'likes',
             'date_created',
             "date_updated",
             # 'user',
