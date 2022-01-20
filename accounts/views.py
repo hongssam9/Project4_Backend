@@ -6,7 +6,7 @@ from rest_framework import generics
 from Project4_backend.accounts.serializers import CustomUserSerializer
 
 # Create your views here.
-# class CustomUser(generics.RetrieveUpdateDestroyAPIView):
+# class sign_up(generics.RetrieveUpdateDestroyAPIView):
 #     queryset = CustomUser.objects.all()
 #     serializer_class = CustomUserSerializer
 
