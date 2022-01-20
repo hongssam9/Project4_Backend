@@ -20,7 +20,7 @@ class PhotoSerializer(serializers.HyperlinkedModelSerializer):
             'id',
             'comments',
             'description',
-            'photo',
+            'image',
             # 'likes',
             'date_created',
             "date_updated",
@@ -39,7 +39,7 @@ class CommentSerializer(serializers.HyperlinkedModelSerializer):
         fields = (
             'id',
             'text',
-            'photo',
+            'image',
             
             # 'user',
         )
