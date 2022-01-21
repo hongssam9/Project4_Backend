@@ -9,7 +9,6 @@ from Social_django.settings import AUTH_USER_MODEL
 
 
 class Photo(models.Model):
-    # user = models.ForeignKey( User, verbose_name="Created By", on_delete=models.CASCADE, related_name='photos')
     description = models.CharField(max_length=1000)
     image = ProcessedImageField(upload_to="photos", format="JPEG", options={"quality": 80}, processors=[ResizeToFit(width=1000, height=1000)])
     # likes = models.ManyToManyField(AUTH_USER_MODEL, related_name='photo')
@@ -21,9 +20,9 @@ class Photo(models.Model):
 
 class Comment(models.Model):
     text = models.CharField(max_length=1000)
-    image = models.ForeignKey(Photo,on_delete=models.CASCADE, related_name='comments')
-    # user = models.ForeignKey(User,on_delete=models.CASCADE, related_name='comments_user')
+    photo = models.ForeignKey(Photo,on_delete=models.CASCADE, related_name='comments')
+   
     
 
     def __str__(self):
-        return str(self.comment)
+        return self.text
