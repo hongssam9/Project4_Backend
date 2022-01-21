@@ -3,6 +3,7 @@ from .views import CreateUserView
 
 urlpatterns = [
     path("api/signup/", CreateUserView.as_view()),
+    
      # path('signup/', views.UserAccounts.as_view(), name='UserAccounts'),
      
 #      path('accounts/login/',
