@@ -5,10 +5,7 @@ from django.conf import settings
 
 
 class CustomUser(AbstractUser):
-    username: models.CharField(max_length=50)
-    email = models.EmailField(max_length=250),
     phone = models.CharField(max_length=12),
-    gender = models.CharField(max_length=6), 
+    gender = models.CharField(max_length=200), 
     birthday = models.DateField(),
 
-    pass
