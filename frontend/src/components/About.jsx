@@ -92,7 +92,11 @@ const About = () => {
         >
           <BsInstagram size={35} className="m-1" />
         </Button>
-        <Button target="_blank" href="" variant="outline-*">
+        <Button
+          target="_blank"
+          href="https://tadsmithcodes.com/"
+          variant="outline-*"
+        >
           <BsGlobe size={35} className="m-1" />
         </Button>
         <hr />
