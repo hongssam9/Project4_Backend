@@ -63,7 +63,7 @@ const About = () => {
           Tad Smith 
         </h3>
         <img
-            src={Tad}
+            src="https://socialcaption.s3.us-east-2.amazonaws.com/media/Tad.14a45747845ed77dd2db.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEEaCXVzLWVhc3QtMiJHMEUCIQCgv08OE8VpljHZz6i1TPBmh3BQ893CojcvQe6OYV4NswIgJJeSS8bukocnjNPosSzaW%2B2is2ez1UhYpkBlBhRHwFYq5AIIahAAGgw0MjMyNzA5MDI1NDMiDF66gtTQMy7wBhjHuyrBAs5dQWiIrR8SGruySKBrJUxtJxDmPbb%2FwYl%2Bit67UpsgNTSnrU23moz4E%2FKuP4HwduzBkQcHGtp5qI83vUOEzvTR3P8gz4t0FkMIjxVLWX7HtzWd5XPZxCQn7R8EtBAg5WjkMTC0J6HLeMsAjmi2gTHigMvRILB2QySsJhGpw5EqQapEHbchiB%2Bw6MWMzxt%2FGUhAus1Urbk5Ykn2OHCriljh1Nai2IrcG%2BgMVqp9o5DCNM3Fnq5c5upRSZbDzzjtwZfDHsc1IA5TUrBfrg%2FkE00pF%2Ba5Df2EB2h9R7kiQA4gGm4IlumvNJkk%2B8kWBtJflPE9rQsm7BvDejDuHhcIz2hA7V5ppXr4CnVKGkDeFZTahjVQdMu5SOBDBLCW30NnZTjma2%2BlN6M1d5sEzhixrqtjRoXolG%2FD89DnwQbCZqCE%2FDCo%2FLePBjqzAmILGRwC2RBCHGSXzXFQnQKLMeJV%2BnkYC6KUvQ3QyLrqYd%2BxvkJX5RLnNlblJKZmlhD92XCZceHhfuj9JsSQQZzLPtGI9Ita97ef%2B2otECflj3TIoOOWweuo8j8lCB3sRxStTsxtPOfE%2BixdG%2FMtK0y66Oq8zkORrobEOfIHVHfqpj3AYfX71eCt343ZAvRdZgzBcfWXxxmQCGVt0jPjlN%2FojoMoQz7PYyJVrFa3lIUQQibetapRPsdmSnlRYGKYQQ9c1rFBf%2FbKIP1sbGBHiwCekN8mne%2B3VCtvgsYCPbSSa196tuBrgWaVDa4f0vkHqkY2F%2BCa2Ya4vpFYvvnB7jZGGdZFg4rbcsPp5%2FvAXtYRDZgAVaA6E58bRXwb6rMICc6Mh9qSBKFULgdoiHTrp5VbsD4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220124T033801Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAWFDHJNMHWUXYMIUW%2F20220124%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=f0e3447a4a22db2b4e4e2b7627e8befcf739f56f6f283a44645caee0c81f56f9"
             alt="Tad"
             id="profile"
             className="rounded-circle border border-muted border-3"
@@ -103,7 +103,7 @@ const About = () => {
         <h3>Xuyen Hoang
         </h3>
         <img
-            src={Xuyen}
+            src="https://socialcaption.s3.us-east-2.amazonaws.com/media/Xuyen.cc1f9670b2e920473a3a.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEEaCXVzLWVhc3QtMiJHMEUCIQCgv08OE8VpljHZz6i1TPBmh3BQ893CojcvQe6OYV4NswIgJJeSS8bukocnjNPosSzaW%2B2is2ez1UhYpkBlBhRHwFYq5AIIahAAGgw0MjMyNzA5MDI1NDMiDF66gtTQMy7wBhjHuyrBAs5dQWiIrR8SGruySKBrJUxtJxDmPbb%2FwYl%2Bit67UpsgNTSnrU23moz4E%2FKuP4HwduzBkQcHGtp5qI83vUOEzvTR3P8gz4t0FkMIjxVLWX7HtzWd5XPZxCQn7R8EtBAg5WjkMTC0J6HLeMsAjmi2gTHigMvRILB2QySsJhGpw5EqQapEHbchiB%2Bw6MWMzxt%2FGUhAus1Urbk5Ykn2OHCriljh1Nai2IrcG%2BgMVqp9o5DCNM3Fnq5c5upRSZbDzzjtwZfDHsc1IA5TUrBfrg%2FkE00pF%2Ba5Df2EB2h9R7kiQA4gGm4IlumvNJkk%2B8kWBtJflPE9rQsm7BvDejDuHhcIz2hA7V5ppXr4CnVKGkDeFZTahjVQdMu5SOBDBLCW30NnZTjma2%2BlN6M1d5sEzhixrqtjRoXolG%2FD89DnwQbCZqCE%2FDCo%2FLePBjqzAmILGRwC2RBCHGSXzXFQnQKLMeJV%2BnkYC6KUvQ3QyLrqYd%2BxvkJX5RLnNlblJKZmlhD92XCZceHhfuj9JsSQQZzLPtGI9Ita97ef%2B2otECflj3TIoOOWweuo8j8lCB3sRxStTsxtPOfE%2BixdG%2FMtK0y66Oq8zkORrobEOfIHVHfqpj3AYfX71eCt343ZAvRdZgzBcfWXxxmQCGVt0jPjlN%2FojoMoQz7PYyJVrFa3lIUQQibetapRPsdmSnlRYGKYQQ9c1rFBf%2FbKIP1sbGBHiwCekN8mne%2B3VCtvgsYCPbSSa196tuBrgWaVDa4f0vkHqkY2F%2BCa2Ya4vpFYvvnB7jZGGdZFg4rbcsPp5%2FvAXtYRDZgAVaA6E58bRXwb6rMICc6Mh9qSBKFULgdoiHTrp5VbsD4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220124T033831Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAWFDHJNMHWUXYMIUW%2F20220124%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=6140116a33152c9f22633273dbd7b82e4dc3a4b27816b97a4a232f8bd8c15a37"
             alt="Xuyen"
             id="profile"
             className="rounded-circle border border-muted border-3"
@@ -127,7 +127,7 @@ const About = () => {
         <h3>Samuel Hong
         </h3>
         <img
-            src={Sam}
+            src="https://socialcaption.s3.us-east-2.amazonaws.com/media/Sam.cf8dfe49fed50d78865f.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEEaCXVzLWVhc3QtMiJHMEUCIQCgv08OE8VpljHZz6i1TPBmh3BQ893CojcvQe6OYV4NswIgJJeSS8bukocnjNPosSzaW%2B2is2ez1UhYpkBlBhRHwFYq5AIIahAAGgw0MjMyNzA5MDI1NDMiDF66gtTQMy7wBhjHuyrBAs5dQWiIrR8SGruySKBrJUxtJxDmPbb%2FwYl%2Bit67UpsgNTSnrU23moz4E%2FKuP4HwduzBkQcHGtp5qI83vUOEzvTR3P8gz4t0FkMIjxVLWX7HtzWd5XPZxCQn7R8EtBAg5WjkMTC0J6HLeMsAjmi2gTHigMvRILB2QySsJhGpw5EqQapEHbchiB%2Bw6MWMzxt%2FGUhAus1Urbk5Ykn2OHCriljh1Nai2IrcG%2BgMVqp9o5DCNM3Fnq5c5upRSZbDzzjtwZfDHsc1IA5TUrBfrg%2FkE00pF%2Ba5Df2EB2h9R7kiQA4gGm4IlumvNJkk%2B8kWBtJflPE9rQsm7BvDejDuHhcIz2hA7V5ppXr4CnVKGkDeFZTahjVQdMu5SOBDBLCW30NnZTjma2%2BlN6M1d5sEzhixrqtjRoXolG%2FD89DnwQbCZqCE%2FDCo%2FLePBjqzAmILGRwC2RBCHGSXzXFQnQKLMeJV%2BnkYC6KUvQ3QyLrqYd%2BxvkJX5RLnNlblJKZmlhD92XCZceHhfuj9JsSQQZzLPtGI9Ita97ef%2B2otECflj3TIoOOWweuo8j8lCB3sRxStTsxtPOfE%2BixdG%2FMtK0y66Oq8zkORrobEOfIHVHfqpj3AYfX71eCt343ZAvRdZgzBcfWXxxmQCGVt0jPjlN%2FojoMoQz7PYyJVrFa3lIUQQibetapRPsdmSnlRYGKYQQ9c1rFBf%2FbKIP1sbGBHiwCekN8mne%2B3VCtvgsYCPbSSa196tuBrgWaVDa4f0vkHqkY2F%2BCa2Ya4vpFYvvnB7jZGGdZFg4rbcsPp5%2FvAXtYRDZgAVaA6E58bRXwb6rMICc6Mh9qSBKFULgdoiHTrp5VbsD4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220124T033239Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAWFDHJNMHWUXYMIUW%2F20220124%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=cfb0d600c7e9c2ecfb68c236a21ae64b9413a65b118723934064d2c2ddcadc36"
             alt="Sam"
             id="profile"
             className="rounded-circle border border-muted border-3"
