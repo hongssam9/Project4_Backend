@@ -18,7 +18,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 
 // import * as imageSrc from '../images';
 const ImageFeed = () => {
-  const url = "http://shtsxh.herokuapp.com/";
+  const url = "http://shtsxh.herokuapp.com/photo";
   const [Image, setImage] = useState([]);
   
   useEffect(() => {
