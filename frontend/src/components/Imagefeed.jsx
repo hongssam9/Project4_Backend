@@ -12,7 +12,6 @@ import {
 } from "react-bootstrap";
 import { BiCommentAdd } from "react-icons/bi";
 import Like from "./Like";
-import axios from "axios";
 import { RiHome3Fill } from "react-icons/ri";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
@@ -75,7 +74,7 @@ const ImageFeed = () => {
       </Navbar>
 
       {/* ==================Images================== */}
-      <Carousel variant="light">
+      <Carousel variant="light" className="image-holder">
         {Object.keys(Image).length
           ? Image.map((img) => (
               <Carousel.Item key={img.id}>
@@ -94,7 +93,7 @@ const ImageFeed = () => {
         {/* ==================Buttons================== */}
         <Row>
           <Col>
-            <Like />
+           <Like />
           </Col>
 
           <Col>

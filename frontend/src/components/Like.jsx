@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Comment from "./Comment";
 
 const Like = () => {
-  const [buttonLikes, setButtonLikes] = useState(999);
+  const [buttonLikes, setButtonLikes] = useState(0);
 
   const lookup = [
     { value: 1, symbol: "" },
@@ -28,7 +28,7 @@ const Like = () => {
 
   const handleClickLikeButton = () => {
     var likesString = setButtonLikes((prevValue) => prevValue + 1);
-    String(likesString).replace(/(.)(?=(\d{3})+$)/g,'$1,') 
+    // String(likesString).replace(/(.)(?=(\d{3})+$)/g,'$1,') 
   };
 
   return (
