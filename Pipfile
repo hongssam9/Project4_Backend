@@ -17,6 +17,7 @@ gunicorn = "*"
 django-cors-headers = "*"
 boto3 = "*"
 django-storages = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
