@@ -46,13 +46,18 @@ INSTALLED_APPS = [
     'accounts',
     'social_django',
     'corsheaders',
-    'storages'
+    'rest_framework_simplejwt',
+    'storages',
 ]
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
 REST_FRAMEWORK = {
        'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
+        
+    ],
+        'DEFAULT_AUTHENTICATION_CLASSES': [   
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ]
 }
 
@@ -74,7 +79,7 @@ ROOT_URLCONF = 'Social_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend/build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -171,3 +176,6 @@ STATIC_URL = AWS_URL+'static/'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 MEDIA_URL = AWS_URL + '/media/'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'frontend/build/static')
+]
